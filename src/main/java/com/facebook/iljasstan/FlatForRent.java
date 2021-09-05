@@ -13,12 +13,6 @@ public class FlatForRent {
         this.numberOfRooms = numberOfRooms;
         this.hasInternet = hasInternet;
         this.hasBalcony = hasBalcony;
-        if (isGoodForFamilies() == true) {
-            System.out.println("The flat " + address + " is good for Families.");
-        }
-        if (isGoodForProgrammers() == true) {
-            System.out.println("The flat " + address + " is good for Programmers.");
-        }
     }
 
     public void rent() {
@@ -31,7 +25,7 @@ public class FlatForRent {
         else return false;
     }
     public boolean isGoodForProgrammers() {
-        if (hasInternet == true) {
+        if (hasInternet) {
             return true;
         }
         else return false;
