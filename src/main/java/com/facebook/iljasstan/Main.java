@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class MAIN {
+public class Main {
     public static void main(String[] args) throws IOException {
         FlatForRent flat1 = new FlatForRent("Moscow, Red Square", 10000, 5, true, true);
         FlatForRent flat2 = new FlatForRent("Moscow, Butovo", 200, 1, true, false);
